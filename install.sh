@@ -4,7 +4,7 @@
 set -e
 
 # Variables predeterminadas
-URL_BASE="https://raw.githubusercontent.com/Jotalea/TheftDeterrent/main"
+URL_BASE="https://raw.githubusercontent.com/lfmen/TheftDeterrent/main/deb"
 # Directorio donde está el script (para buscar los .deb locales)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 FILES=(
@@ -184,9 +184,9 @@ download_files() {
 
         if [ -f "$FILE" ]; then
             echo "Ya tenés el archivo $FILE en el directorio de trabajo."
-        elif [ -f "$SCRIPT_DIR/$FILE" ]; then
-            echo "Copiando $FILE desde la carpeta local..."
-            cp "$SCRIPT_DIR/$FILE" "$FILE"
+        elif [ -f "$SCRIPT_DIR/deb/$FILE" ]; then
+            echo "Copiando $FILE desde la carpeta local (deb/)..."
+            cp "$SCRIPT_DIR/deb/$FILE" "$FILE"
         else
             echo "Descargando $FILE desde internet..."
             wget "$URL_BASE/$FILE" || handle_error "No se pudo descargar $FILE desde $URL_BASE"
@@ -274,10 +274,10 @@ fi
 # Finalizar
 if $USE_LOG; then
     echo "Se instaló el Theft Deterrent." >> "$LOG_FILE"
-    echo "Podés leer las instrucciones de post-instalación en https://github.com/Jotalea/TheftDeterrent/blob/main/README.md#post-instalación" >> "$LOG_FILE"
+    echo "Podés leer las instrucciones de post-instalación en https://github.com/lfmen/TheftDeterrent#post-instalación" >> "$LOG_FILE"
 else
     echo "Se instaló el Theft Deterrent."
-    echo "Podés leer las instrucciones de post-instalación en https://github.com/Jotalea/TheftDeterrent/blob/main/README.md#post-instalación"
+    echo "Podés leer las instrucciones de post-instalación en https://github.com/lfmen/TheftDeterrent#post-instalación"
 fi
 
 exit 0

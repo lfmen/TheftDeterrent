@@ -3,8 +3,9 @@ import subprocess
 import io
 import os
 
-# Directorio base: donde está este script
-base_dir = os.path.dirname(os.path.abspath(__file__))
+# Directorio base: carpeta principal del repositorio (subiendo un nivel desde tools)
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+deb_dir = os.path.join(base_dir, 'deb')
 
 files = [
     'theftdeterrentclient-lib_6.0.0.11.huayra10_amd64.deb',
@@ -15,7 +16,7 @@ files = [
 ]
 
 for f in files:
-    deb_path = os.path.join(base_dir, f)
+    deb_path = os.path.join(deb_dir, f)
     if not os.path.exists(deb_path):
         print(f"Archivo no encontrado, omitiendo: {f}")
         continue

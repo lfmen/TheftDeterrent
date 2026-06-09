@@ -1,8 +1,8 @@
 import os
 import re
 
-# Directorio donde están los .deb extraídos (relativo al script)
-search_dir = os.path.join(os.path.dirname(__file__), 'extracted_deb_all')
+# Directorio donde están los .deb extraídos (relativo al script: subiendo un nivel)
+search_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'extracted_deb_all')
 
 for root, _, files in os.walk(search_dir):
     for name in files:

@@ -3,12 +3,13 @@ import subprocess
 import io
 import os
 
-# Directorio base: donde está este script
-base_dir = os.path.dirname(os.path.abspath(__file__))
+# Directorio base: carpeta principal del repositorio (subiendo un nivel desde tools)
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+deb_dir = os.path.join(base_dir, 'deb')
 os.makedirs(os.path.join(base_dir, 'extracted_deb'), exist_ok=True)
 
 f = 'theftdeterrentguardian_6.0.0.11.debian10_amd64.deb'
-deb_path = os.path.join(base_dir, f)
+deb_path = os.path.join(deb_dir, f)
 
 tar_out = subprocess.check_output(['tar', '-tf', deb_path]).decode('utf-8').splitlines()
 data_file = [n.strip() for n in tar_out if 'data.tar' in n][0]
