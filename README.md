@@ -16,6 +16,7 @@
 
 ## Tabla de Contenidos
 
+- [Compatibilidad](#compatibilidad)
 - [El Problema](#el-problema)
 - [La Solución](#la-solución)
 - [Instalación](#instalación)
@@ -25,6 +26,21 @@
 - [Post-Instalación](#post-instalación)
 - [Referencias](#referencias-y-repositorios)
 - [Licencia](#licencia)
+
+## Compatibilidad
+
+| Sistema operativo | Versión | Estado | Notas |
+|---|---|---|---|
+| Ubuntu | 22.04 LTS (Jammy) | Soportado | Requiere `install.sh` |
+| Ubuntu | 20.04 LTS (Focal) | Soportado | Requiere `install.sh` |
+| Ubuntu | 18.04 LTS (Bionic) | No probado | - |
+| Linux Mint | 21+ | Soportado | Requiere `install.sh` |
+| Linux Mint | 20 | Soportado | Requiere `install.sh` |
+| Huayra | 6.5+ | Soportado | Requiere `install.sh` |
+| Huayra | 5 / 6 | Soportado | Instalación nativa via `apt` |
+| Kali Linux | Rolling | Soportado | Requiere `install.sh` |
+| Debian | 12 (Bookworm) | No probado | - |
+| Windows | 10 / 11 | Soportado | Instaladores en `windows/` |
 
 ## El Problema
 
