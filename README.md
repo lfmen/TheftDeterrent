@@ -31,14 +31,14 @@
 
 | Sistema operativo | Versión | Estado | Notas |
 |---|---|---|---|
-| Ubuntu | 22.04 LTS (Jammy) | Soportado | Requiere `install.sh` |
-| Ubuntu | 20.04 LTS (Focal) | Soportado | Requiere `install.sh` |
-| Ubuntu | 18.04 LTS (Bionic) | No probado | - |
-| Linux Mint | 21+ | Soportado | Requiere `install.sh` |
-| Linux Mint | 20 | Soportado | Requiere `install.sh` |
-| Huayra | 6.5+ | Soportado | Requiere `install.sh` |
-| Huayra | 5 / 6 | Soportado | Instalación nativa via `apt` |
-| Kali Linux | Rolling | Soportado | Requiere `install.sh` |
+| Linux Mint | 22.3 | Soportado | Probado. Requiere `install.sh` |
+| Linux Mint | 21+ | No probado | - |
+| Linux Mint | 20 | No probado | - |
+| Ubuntu | 22.04 LTS (Jammy) | No probado | - |
+| Ubuntu | 20.04 LTS (Focal) | No probado | - |
+| Huayra | 6.5+ | No probado | - |
+| Huayra | 5 / 6 | No probado | Instalación nativa via `apt` según documentación original |
+| Kali Linux | Rolling | No probado | - |
 | Debian | 12 (Bookworm) | No probado | - |
 | Windows | 10 / 11 | Soportado | Instaladores en `windows/` |
 
