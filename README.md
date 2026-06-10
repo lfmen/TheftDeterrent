@@ -2,7 +2,7 @@
 
 # Theft Deterrent Fix & Installer
 
-[![Fork](https://img.shields.io/badge/Fork-Jotalea%2FTheftDeterrent-lightgray)](https://github.com/Jotalea/TheftDeterrent)
+[![Basado en](https://img.shields.io/badge/Basado_en-Jotalea%2FTheftDeterrent-lightgray)](https://github.com/Jotalea/TheftDeterrent)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 [![OS Support](https://img.shields.io/badge/OS-Linux%20%7C%20Windows-green)](#instalación)
 
@@ -11,7 +11,7 @@
 </div>
 
 > [!NOTE]
-> **Fork de [Jotalea/TheftDeterrent](https://github.com/Jotalea/TheftDeterrent)**.  
+> **Basado en el trabajo de [Jotalea/TheftDeterrent](https://github.com/Jotalea/TheftDeterrent)**.  
 > Todos los créditos del repositorio original, la paquetización base y la documentación primaria corresponden a **[Jotalea](https://github.com/Jotalea)**.
 
 ## Tabla de Contenidos
