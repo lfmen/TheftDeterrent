@@ -39,7 +39,7 @@ En distribuciones modernas (como **Linux Mint 21+, Ubuntu 22.04+ o Huayra 6.5+**
 
 ## La Solución
 
-Hemos desarrollado un **instalador automatizado (`install.sh`)** diseñado para resolver todos los conflictos de dependencias de forma dinámica y transparente para el usuario:
+Esta solución consta de un **instalador automatizado (`install.sh`)** diseñado para resolver todos los conflictos de dependencias de forma dinámica y transparente para el usuario:
 
 - **Instalación de dependencias legacy:** Obtiene `libpython2.7` directamente del repositorio `universe` o mediante un *fallback* temporal al archivo de Ubuntu Jammy.
 - **Aplicación inteligente de parches:** Despliega los metadatos parcheados de *Guardian* únicamente si el sistema carece de un entorno Python 2 nativo.
