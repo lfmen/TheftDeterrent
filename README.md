@@ -2,21 +2,17 @@
 
 # Theft Deterrent Fix & Installer
 
-[![GitHub fork](https://img.shields.io/github/forks/lfmen/TheftDeterrent?style=for-the-badge)](https://github.com/lfmen/TheftDeterrent/network)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![OS Support](https://img.shields.io/badge/OS-Linux%20%7C%20Windows-green?style=for-the-badge)](#instalación)
+[![Fork](https://img.shields.io/badge/Fork-Jotalea%2FTheftDeterrent-lightgray)](https://github.com/Jotalea/TheftDeterrent)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
+[![OS Support](https://img.shields.io/badge/OS-Linux%20%7C%20Windows-green)](#instalación)
 
 > **Solución definitiva y script de autoconfiguración para Theft Deterrent en distribuciones Linux modernas y Windows.**
 
 </div>
 
----
-
 > [!NOTE]
 > **Fork de [Jotalea/TheftDeterrent](https://github.com/Jotalea/TheftDeterrent)**.  
 > Todos los créditos del repositorio original, la paquetización base y la documentación primaria corresponden a **[Jotalea](https://github.com/Jotalea)**.
-
----
 
 ## Tabla de Contenidos
 
@@ -30,8 +26,6 @@
 - [Referencias](#referencias-y-repositorios)
 - [Licencia](#licencia)
 
----
-
 ## El Problema
 
 En distribuciones modernas (como **Linux Mint 21+, Ubuntu 22.04+ o Huayra 6.5+**), la instalación de los paquetes `.deb` originales presenta fallos críticos que impiden su funcionamiento:
@@ -43,8 +37,6 @@ En distribuciones modernas (como **Linux Mint 21+, Ubuntu 22.04+ o Huayra 6.5+**
 > **Nota sobre parches previos:**  
 > El parche comunitario provisto por [Maxelslasarte](https://huayra.educar.gob.ar/ayuda/?qa=user/Maxelslasarte) corrige los *metadatos* (cambiando la dependencia a Python 3), pero **no soluciona** el crash de los *binarios*, ya que estos siguen requiriendo la librería original (`libpython2.7`) en tiempo de ejecución.
 
----
-
 ## La Solución
 
 Hemos desarrollado un **instalador automatizado (`install.sh`)** diseñado para resolver todos los conflictos de dependencias de forma dinámica y transparente para el usuario:
@@ -52,8 +44,6 @@ Hemos desarrollado un **instalador automatizado (`install.sh`)** diseñado para 
 - **Instalación de dependencias legacy:** Obtiene `libpython2.7` directamente del repositorio `universe` o mediante un *fallback* temporal al archivo de Ubuntu Jammy.
 - **Aplicación inteligente de parches:** Despliega los metadatos parcheados de *Guardian* únicamente si el sistema carece de un entorno Python 2 nativo.
 - **Integración del sistema:** Crea los enlaces simbólicos necesarios para disponer del comando `theftdeterrentclient` de forma global.
-
----
 
 ## Instalación
 
@@ -86,8 +76,6 @@ Procede con la instalación convencional a través del gestor de paquetes (Synap
 2. Ejecuta el instalador `windows/Theft Derrent Agent.exe`.
 3. **Reinicia** el sistema operativo.
 
----
-
 ## Post-Instalación
 
 Una vez instalado, sigue estos pasos para vincular tu equipo:
@@ -98,15 +86,11 @@ Una vez instalado, sigue estos pasos para vincular tu equipo:
    - **Red Juana Manso:** `citd.dgp.educ.ar`
    - **Otros equipos:** `tds.educacion.gob.ar`
 
----
-
 ## Referencias y Repositorios
 
 - [Jotalea/TheftDeterrent](https://github.com/Jotalea/TheftDeterrent) - Repositorio y documentación original.
 - [Parche de Maxelslasarte](https://huayra.educar.gob.ar/ayuda/?qa=user/Maxelslasarte) - Adaptación de metadatos de Guardian.
 - [HuayraLinux/theftdeterrent6](https://github.com/HuayraLinux/theftdeterrent6) - Paquetización oficial para entornos Huayra 6.
-
----
 
 ## Licencia
 
