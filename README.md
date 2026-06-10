@@ -1,5 +1,7 @@
 <div align="center">
 
+# Theft Deterrent Fix & Installer
+
 [![Basado en](https://img.shields.io/badge/Basado_en-Jotalea%2FTheftDeterrent-lightgray)](https://github.com/Jotalea/TheftDeterrent)
 [![License: MIT](https://img.shields.io/badge/License-MIT-0071C5)](https://opensource.org/licenses/MIT)
 [![OS Support](https://img.shields.io/badge/OS-Linux%20%7C%20Windows-0071C5)](#instalación)
