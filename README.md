@@ -60,7 +60,9 @@ Esta solución introduce **mejoras críticas al instalador automatizado (`instal
 
 - **Instalación de dependencias legacy:** Obtiene `libpython2.7` directamente del repositorio `universe` o mediante un *fallback* temporal al archivo de Ubuntu Jammy.
 - **Aplicación inteligente de parches:** Despliega los metadatos parcheados de *Guardian* únicamente si el sistema carece de un entorno Python 2 nativo.
-- **Integración del sistema:** Crea los enlaces simbólicos necesarios para disponer del comando `theftdeterrentclient` de forma global.
+- **Corrección de rutas:** Soluciona un error tipográfico en la ruta del binario (`TheftDeterrentclient` vs `TheftDeterrentClient`) que impedía la ejecución en versiones anteriores.
+- **Soporte offline/local:** Prioriza el uso de los paquetes `.deb` locales incluidos en el repositorio, permitiendo una instalación más rápida y sin requerir descargar los binarios nuevamente.
+- **Integración del sistema:** Crea los enlaces simbólicos correctos para disponer del comando `theftdeterrentclient` de forma global.
 
 ## Instalación rápida
 
