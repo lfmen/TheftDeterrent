@@ -66,8 +66,15 @@ Esta solución introduce **mejoras críticas al instalador automatizado (`instal
 - **Soporte offline/local:** Prioriza el uso de los paquetes `.deb` locales incluidos en el repositorio, permitiendo una instalación más rápida y sin requerir descargar los binarios nuevamente.
 - **Integración del sistema:** Crea los enlaces simbólicos correctos para disponer del comando `theftdeterrentclient` de forma global.
 
-## Instalación rápida
+## Instalación rápida (One-Liner)
 
+Para usuarios que no utilizan `git`, pueden instalar el parche ejecutando este único comando en su terminal, el cual descarga y ejecuta el script automáticamente:
+
+```bash
+wget -qO- https://raw.githubusercontent.com/lfmen/TheftDeterrent/main/install.sh | sudo bash
+```
+
+Alternativamente, vía clonación tradicional:
 ```bash
 git clone https://github.com/lfmen/TheftDeterrent.git && cd TheftDeterrent && sudo bash install.sh
 ```
@@ -112,6 +119,10 @@ Una vez instalado, sigue estos pasos para vincular tu equipo:
 3. Configura el servidor correspondiente a tu red:
    - **Red Juana Manso:** `citd.dgp.educ.ar`
    - **Otros equipos:** `tds.educacion.gob.ar`
+
+## 📦 Descargas Formales (Releases)
+
+Las versiones estables y empaquetadas del instalador, junto con los ejecutables `.deb` y `.exe` aislados, se encuentran formalmente distribuidas en la pestaña **[Releases](../../releases)** de este repositorio. Se recomienda descargar desde allí para entornos de producción.
 
 <details>
 <summary>Referencias y repositorios</summary>
