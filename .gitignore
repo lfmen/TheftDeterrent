@@ -1,0 +1,26 @@
+# Archivos extraídos de los .deb (para debugging/análisis)
+extracted_deb/
+extracted_deb_all/
+
+# Archivos de log generados por install.sh
+*.txt
+tda_install_log.txt
+
+# Directorio temporal de instalación
+tda/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Carpeta Extracted (análisis local)
+Extracted/
