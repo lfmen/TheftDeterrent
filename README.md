@@ -66,33 +66,19 @@ Esta solución introduce **mejoras críticas al instalador automatizado (`instal
 - **Soporte offline/local:** Prioriza el uso de los paquetes `.deb` locales incluidos en el repositorio, permitiendo una instalación más rápida y sin requerir descargar los binarios nuevamente.
 - **Integración del sistema:** Crea los enlaces simbólicos correctos para disponer del comando `theftdeterrentclient` de forma global.
 
-## Instalación rápida (One-Liner)
+## Instalación (Linux)
 
-Para usuarios que no utilizan `git`, pueden instalar el parche ejecutando este único comando en su terminal, el cual descarga y ejecuta el script automáticamente:
+Para distribuciones basadas en Debian (Ubuntu, Linux Mint, Kali, Huayra 6.5+), podés instalar el parche de dos maneras:
 
+**Opción A: Rápida (Recomendada)**
 ```bash
 wget -qO- https://raw.githubusercontent.com/lfmen/TheftDeterrent/main/install.sh | sudo bash
 ```
 
-Alternativamente, vía clonación tradicional:
+**Opción B: Clonando el repositorio**
 ```bash
-git clone https://github.com/lfmen/TheftDeterrent.git && cd TheftDeterrent && sudo bash install.sh
-```
-
-## Instalación detallada
-
-### Linux (Debian, Ubuntu, Linux Mint, Kali, Huayra 6.5+)
-
-Para instalar, clona este repositorio y ejecuta el script automatizado con privilegios de administrador:
-
-```bash
-# 1. Clonar el repositorio
 git clone https://github.com/lfmen/TheftDeterrent.git
-
-# 2. Ingresar al directorio
 cd TheftDeterrent
-
-# 3. Ejecutar el instalador
 sudo bash install.sh
 ```
 

@@ -221,7 +221,6 @@ add_to_path() {
         # Parchear el autorun para solucionar problemas con libgail/atk-bridge en Ubuntu moderno
         echo "Aplicando parche de GTK_MODULES al autorun..."
         sed -i '2i export GTK_MODULES=""' "$script_path"
-        sed -i '3i export GTK2_RC_FILES=/usr/share/themes/Raleigh/gtk-2.0/gtkrc' "$script_path"
         
         echo "El comando 'theftdeterrentclient' ahora está disponible en el PATH."
     else
