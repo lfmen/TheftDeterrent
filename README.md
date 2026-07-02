@@ -35,14 +35,6 @@
 | Sistema operativo | Versión | Estado | Notas |
 |:---|:---|:---:|:---|
 | Linux Mint | 22.3 | ✓ | Probado. Requiere `install.sh` |
-| Linux Mint | 21+ | ? | No probado |
-| Linux Mint | 20 | ? | No probado |
-| Ubuntu | 22.04 LTS (Jammy) | ? | No probado |
-| Ubuntu | 20.04 LTS (Focal) | ? | No probado |
-| Huayra | 6.5+ | ? | No probado |
-| Huayra | 5 / 6 | ? | No probado. Instalación nativa via `apt` según documentación original |
-| Kali Linux | Rolling | ? | No probado |
-| Debian | 12 (Bookworm) | ? | No probado |
 | Windows | 10 / 11 | ✓ | Instaladores en `windows/` |
 
 ## El Problema
