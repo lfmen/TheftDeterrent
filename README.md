@@ -34,7 +34,10 @@
 
 | Sistema operativo | Versión | Estado | Notas |
 |:---|:---|:---:|:---|
-| Linux Mint | 22.3 | ✓ | Probado. Requiere `install.sh` |
+| Ubuntu | 22.04 LTS / 24.04 LTS | ✓ | Probado. Requiere `install.sh` |
+| Linux Mint | 21.x / 22.x | ✓ | Probado. Requiere `install.sh` |
+| Huayra Linux | 5 / 6 / 10 | ✓ | Soporte automatizado con `install.sh` |
+| Debian | 10+ | ✓ | Compatible a través de `install.sh` |
 | Windows | 10 / 11 | ✓ | Instaladores en `windows/` |
 
 ## El Problema
